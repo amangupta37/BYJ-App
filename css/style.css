@@ -123,6 +123,21 @@ body {
 
 }
 
+
+@keyframes ani-btn{  /* move right to left */
+    0%{
+        opacity: 0;
+        transform: translateY(30px); /*move left*/
+    }
+
+    
+    100%{
+        opacity: 1;
+        transform: translate(0);/*back to normal position*/
+    }
+
+}
+
 .btn:link,
 .btn:visited{
     text-transform: uppercase;
@@ -131,6 +146,7 @@ body {
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
+    position: relative;
   
 }
 .btn:hover{
@@ -138,7 +154,7 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,.2);
 
 }
-.btn:active{
+.btn:active{  /*button press*/
     transform: translate(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
@@ -152,4 +168,34 @@ body {
 
 }
 
-  
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn-color::after{
+    background-color: #fff;
+
+
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animat{
+  /*  animation-name: ani-btn;
+    animation-duration: .5s easout;
+    animation-delay: .75s;*/
+
+    animation: ani-btn .5s ease-out .75s;
+    animation-fill-mode: backwards; /*button before appliying animation*/
+
+}

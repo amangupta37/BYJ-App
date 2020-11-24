@@ -4,10 +4,7 @@
   "description": "landing page of BYJ app",
   "main": "index.js",
   "scripts": {
-    
-      "compile:sass" : "node-sass sass/main.scss css/style.css -w" 
-
-
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -21,6 +18,6 @@
   "homepage": "https://github.com/amangupta37/BYJ-App#readme",
   "devDependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
-  

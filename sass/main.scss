@@ -10,6 +10,11 @@ $color-prim:#55c57a;
 $color-prim-light:#7ed56f;
 $color-prim-dark:#28b485;
 
+$color-grey-dark:#777;
+$color-white:#fff;
+
+
+
 
 *{
     margin:0;
@@ -23,7 +28,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color:#777;
+    color:$color-grey-dark;
     padding:30px;
 }
 
@@ -62,7 +67,7 @@ body {
   
 }
 .heading-primary{
-    color:#fff;
+    color:$color-white;
     text-transform:uppercase;
     backface-visibility: hidden;/*to remove the shake effect*/
     margin-bottom:60px;
@@ -166,8 +171,8 @@ body {
 
 
 .btn-color{
-   background-color: #fff;
-   color:#777;
+   background-color: $color-white;
+   color:$color-grey-dark;
    
 
 }
@@ -185,7 +190,7 @@ body {
     transition: all .4s;
 }
 .btn-color::after{
-    background-color: #fff;
+    background-color: $color-white;
 
 
 }

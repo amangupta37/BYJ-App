@@ -1,3 +1,3 @@
-# BYJ-App (Book Your Journy) 
+# BYJ-App (Book Your Journey) 
 
 
